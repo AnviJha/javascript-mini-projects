@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading */
+h1 {
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: #ddd;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Button container (grid layout) */
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-gap: 20px;
+}
+
+/* Buttons (Simon pads) */
+.btn {
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* Colors (Simon style) */
+.btn:nth-child(1) {
+    background: #ff4d4d; /* red */
+}
+
+.btn:nth-child(2) {
+    background: #4dff88; /* green */
+}
+
+.btn:nth-child(3) {
+    background: #4da6ff; /* blue */
+}
+
+.btn:nth-child(4) {
+    background: #ffd24d; /* yellow */
+    color: black;
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Active flash effect (for game logic later) */
+.active {
+    opacity: 0.6;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px white;
+}
+/* Game flash (white) */
+.gameflash {
+    background-color: white !important;
+}
+
+/* User flash (green) */
+.userflash {
+    background-color: limegreen !important;
+}
