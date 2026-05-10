@@ -36,6 +36,9 @@ Memory-based game where user repeats patterns.
 
 A simple task manager to add, delete, and track tasks.
 
+🔹9.dog_quiz 🐶
+used api to fetch image and facts and made a simple quiz structure with random facts.
+
 ---
 
 🛠️ Technologies Used
